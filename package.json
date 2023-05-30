@@ -1,0 +1,16 @@
+{
+  "name": "sonarqube-quality-gate-commit-status",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^19.0.11",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3"
+  }
+}
