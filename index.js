@@ -10,7 +10,11 @@ const owner = process.env.OWNER;
 const repo = process.env.REPO;
 const sha = process.env.SHA;
 const sonarqubeToken = process.env.SONARQUBE_TOKEN;
-const sonarqubeUrl = process.env.SONARQUBE_URL;
+let sonarqubeUrl = process.env.SONARQUBE_URL;
+if (sonarqubeUrl.endsWith('/')) {
+    sonarqubeUrl = sonarqubeUrl.slice(0, -1);
+}
+
 const projectKey = process.env.SONARQUBE_PROJECT_KEY;
 const statusContext = 'SonarQube Quality Gate';
 
